@@ -1,0 +1,83 @@
+.tabs-container {
+  font-family: 'Roboto', sans-serif;
+  background-color: #000;
+  max-width: 700px;
+  margin: 1rem auto;
+  border-radius: 8px;
+  overflow-x: hidden;
+  position: relative;
+}
+
+.tabs-container svg {
+  width: 24px;
+  height: 24px;
+  padding: 8px;
+  cursor: pointer;
+  color: #fff;
+  border-radius: 999px;
+}
+
+.tabs-container ul {
+  display: flex;
+  gap: 8px;
+  padding: 12px 24px;
+  margin: 0;
+  list-style: none;
+  overflow-x: scroll;
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+  scroll-behavior: smooth;
+}
+
+.tabs-container ul::-webkit-scrollbar {
+  display: none;
+}
+
+.tabs-container ul a {
+  color: #fff;
+  text-decoration: none;
+  background-color: #333;
+  padding: 4px 24px;
+  display: inline-block;
+  border-radius: 4px;
+  user-select: none;
+  white-space: nowrap;
+}
+
+.tabs-container ul a.active {
+  background-color: #fff;
+  color: #000;
+}
+
+
+.tabs-container .left-arrow,
+.tabs-container .right-arrow {
+  position: absolute;
+  top: 0;
+  width: 100px;
+  height: 100%;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+  padding: 0 10px;
+}
+
+.tabs-container .right-arrow {
+  right: 0;
+  justify-content: flex-end;
+  background: linear-gradient(to right, transparent, #000 50%);
+}
+
+.tabs-container .left-arrow {
+  background: linear-gradient(to left, transparent, #000 50%);
+}
+
+.tabs-container svg:hover {
+  background-color: #333;
+}
+
+.right-arrow.active,
+.left-arrow.active {
+  display: flex;
+}
