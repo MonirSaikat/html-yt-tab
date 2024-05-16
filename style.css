@@ -20,7 +20,7 @@
 .tabs-container ul {
   display: flex;
   gap: 8px;
-  padding: 12px 24px;
+  padding: 12px;
   margin: 0;
   list-style: none;
   overflow-x: scroll;
@@ -54,13 +54,17 @@
 .tabs-container .right-arrow {
   position: absolute;
   top: 0;
-  width: 100px;
+  width: 50px;
   height: 100%;
   display: none;
   align-items: center;
   justify-content: center;
   background-color: #000;
   padding: 0 10px;
+}
+
+.tabs-container .left-arrow {
+  justify-content: start;
 }
 
 .tabs-container .right-arrow {
